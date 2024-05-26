@@ -1,10 +1,12 @@
 .page {
+  margin: 0 10px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
 .header {
   position: relative;
   display: grid;
+  padding-block: 10px;
   grid-template-rows: repeat(4, 1fr);
 }
 
@@ -29,7 +31,8 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
 }
 
 .header__decorated-element:before {
@@ -38,7 +41,7 @@
   font-family: "IBM Plex Mono", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 1.38;
   text-align: center;
   color: var(--header-decorated-element-color);
 }
@@ -49,27 +52,27 @@
   border: 2px solid var(--header-decorated-element-color);
   box-shadow: 0 0 4px 2px var(--header-decorated-element-color);
   background-color: var(--header-decorated-element-color);
-  inline-size: 9px;
-  block-size: 9px;
+  inline-size: 5px;
+  block-size: 5px;
 }
 
 .decorated-zone:before,
 .decorated-zone:after {
   content: "";
   border-color: var(--header-corner-border-color);
-  inline-size: 100px;
-  block-size: 100px;
+  inline-size: 25px;
+  block-size: 25px;
   border-style: solid;
 }
 
 .decorated-zone:before {
-  border-width: 2px 2px 0 0;
+  border-width: 1px 1px 0 0;
   grid-row: 1;
   justify-self: end;
 }
 
 .decorated-zone:after {
-  border-width: 0 0 2px 2px;
+  border-width: 0 0 1px 1px;
   grid-row: 4;
   justify-self: start;
   align-self: end;
