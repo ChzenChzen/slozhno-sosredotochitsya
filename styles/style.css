@@ -1,19 +1,62 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
 .header {
+  position: relative;
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.header__theme-menu {
+  grid-row: 2;
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-flow: column;
+  list-style-type: none;
+}
+
+.header__article {
+  grid-row: 3;
+  justify-self: center;
+}
+
+.header__decorated-element {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  right: 20px;
+}
+
+.header__decorated-element:before {
+  content: "rec";
+  text-transform: uppercase;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  color: var(--header-decorated-element-color);
+}
+
+.header__decorated-element:after {
+  content: "";
+  border-radius: 50%;
+  border: 2px solid var(--header-decorated-element-color);
+  box-shadow: 0 0 4px 2px var(--header-decorated-element-color);
+  background-color: var(--header-decorated-element-color);
+  inline-size: 9px;
+  block-size: 9px;
 }
 
 .decorated-zone:before,
 .decorated-zone:after {
-  display: block;
   content: "";
-  border-color: var();
+  border-color: var(--header-corner-border-color);
   inline-size: 100px;
   block-size: 100px;
   border-style: solid;
@@ -27,10 +70,7 @@
 
 .decorated-zone:after {
   border-width: 0 0 2px 2px;
-  grid-row: 5;
+  grid-row: 4;
   justify-self: start;
-}
-
-.header__theme-menu-list {
-  list-style-type: none;
+  align-self: end;
 }
