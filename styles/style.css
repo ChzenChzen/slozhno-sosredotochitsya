@@ -3,3 +3,34 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+.header {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.decorated-zone:before,
+.decorated-zone:after {
+  display: block;
+  content: "";
+  border-color: var();
+  inline-size: 100px;
+  block-size: 100px;
+  border-style: solid;
+}
+
+.decorated-zone:before {
+  border-width: 2px 2px 0 0;
+  grid-row: 1;
+  justify-self: end;
+}
+
+.decorated-zone:after {
+  border-width: 0 0 2px 2px;
+  grid-row: 5;
+  justify-self: start;
+}
+
+.header__theme-menu-list {
+  list-style-type: none;
+}
