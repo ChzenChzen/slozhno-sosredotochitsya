@@ -38,6 +38,7 @@
 
 .header__theme-menu-button_active {
   border: 1px solid var(--header-corner-border-color);
+  pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
