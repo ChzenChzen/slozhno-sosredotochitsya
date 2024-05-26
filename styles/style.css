@@ -133,3 +133,9 @@
   justify-self: start;
   align-self: end;
 }
+
+
+.main {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+}
