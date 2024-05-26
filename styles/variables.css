@@ -8,5 +8,10 @@
   --header-corner-border-color: #ff0070;
   --header-decorated-element-color: #ff0070;
   --header-menu-button-border-color: #ff0070;
+  --header-menu-button-border-color-hover: rgba(255, 0, 112, 0.4);
   --header-menu-button-text-color: #ff0070;
+  --header-title-text-color: #db00ff;
+  --header-title-shadow-color: #ff0070;
+  --header-article-description-background-color: #ff0070;
+  --header-article-description-text-color: #000028;
 }
