@@ -14,4 +14,8 @@
   --header-title-shadow-color: #ff0070;
   --header-article-description-background-color: #ff0070;
   --header-article-description-text-color: #000028;
+  --main-content-title-text-color: #ff0070;
+  --main-content-article-subtitle-text-color: #000028;
+  --main-content-article-subtitle-background-color: #ff0070;
+  --main-content-article-paragraph-text-color: #f1b2ce;
 }
